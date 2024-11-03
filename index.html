@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+    <!-- font awesome CDN -->
+    <script src="https://kit.fontawesome.com/18a26a74b4.js" crossorigin="anonymous"></script>
     <!-- Daisy UI & TailWind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Shared Styles -->
-    <style>
-        .font-manrope {
-            font-family: "Manrope", sans-serif;
-        }
-    </style>
 
     <!-- Tailwind Customization -->
     <script>
@@ -27,6 +22,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        lime: '#ABEF5F',
                     }
                 }
             }
@@ -34,10 +30,92 @@
     </script>
 
 
+    <!-- Shared Styles -->
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .dark-1 {
+            color: #212121;
+        }
+
+        .dark-2 {
+            color: #494949;
+        }
+
+        .dark-3 {
+            color: #737373;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-manrope">
+    <!-- header section  -->
+    <header class="bg-gradient-to-b from-[#f5f5f5] to-white">
+        <nav class="max-w-full lg:max-w-[1170px] mx-auto">
+            <div class="navbar flex justify-between items-center">
+                <!-- title -->
+                <div class="space-x-2">
+                    <i class="fa-solid fa-arrow-right-long -rotate-45 bg-lime p-3 rounded-full"></i>
+                    <a class="text-3xl md:text-2xl lg:text-[32px] font-extrabold dark-1">Rinterio</a>
+                </div>
+                <!-- Links -->
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal space-x-5 text-base dark-2">
+                        <li class="hover:font-bold dark-1"><a>Home</a></li>
+                        <li class="hover:font-bold dark-1"><a>Services</a></li>
+                        <li class="hover:font-bold dark-1"><a>Portfolio</a></li>
+                        <li class="hover:font-bold dark-1"><a>Blogs</a></li>
+                        <li class="hover:font-bold dark-1"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="border border-black hidden lg:flex md:flex">
+                    <!-- icon  -->
+                    <div class="">
+                        <button class="btn btn-ghost btn-circle bg-white border">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                        <button class="btn btn-ghost btn-circle bg-white ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Button -->
+                    <div class="btn bg-lime  rounded-[32px]">
+                        <a class="text-black font-extrabold text-xl"> Book Consult</a>
+                        <i class=" fa-solid fa-arrow-right-long -rotate-45 bg-black p-1.5 rounded-full text-white">
+                        </i>
+                    </div>
 
+                </div>
+                <div class="dropdown relative">
+                    <div tabindex="0" role="button" class="btn bg-white rounded-full lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  w-52 p-2 shadow -left-40">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
