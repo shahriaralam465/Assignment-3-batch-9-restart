@@ -27,6 +27,7 @@
                         lime: '#ABEF5F',
                         light_lime: '#d4f5ae',
                         gray: '#f5f5f5',
+                        deep_dark: '#1C1C1C',
                     }
                 }
             }
@@ -36,10 +37,6 @@
 
     <!-- Shared Styles -->
     <style>
-        .extrabold {
-            font-weight: 900;
-        }
-
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
@@ -89,10 +86,17 @@
                     <!-- icon  -->
                     <div class="flex justify-between items-center gap-2">
                         <button class="btn btn-ghost btn-circle bg-white border">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#000000" fill="none">
+                                <path d="M8 16L16.7201 15.2733C19.4486 15.046 20.0611 14.45 20.3635 11.7289L21 6"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M6 6H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <circle cx="6" cy="20" r="2" stroke="currentColor" stroke-width="1.5" />
+                                <circle cx="17" cy="20" r="2" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M8 20L15 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <path
+                                    d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                             </svg>
                         </button>
                         <button class="btn btn-ghost btn-circle bg-white ">
@@ -467,8 +471,30 @@
 
         </section>
     </main>
-    <footer>
-
+    <footer class="footer footer-center bg-deep_dark w-full p-10 border py-16 lg:py-24">
+        <!-- Content Container -->
+        <div class="w-full md:w-[700px] space-y-4">
+            <div class="space-x-2 flex items-center">
+                <i class="fa-solid fa-arrow-right-long -rotate-45 bg-lime p-3 rounded-full"></i>
+                <a class="text-3xl md:text-2xl lg:text-[32px] font-extrabold dark-1 text-white">Rinterio</a>
+            </div>
+            <p class="dark-3 text-base">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                weathered wood, sleek metal accents.
+            </p>
+            <nav class="grid grid-cols-1 md:grid-cols-4 w-full gap-5 py-4 font-bold text-white">
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <!-- Button -->
+            <div class="btn bg-lime border-none rounded-[32px]">
+                <a class="text-black font-extrabold text-xl"> Book Consult</a>
+                <i class=" fa-solid fa-arrow-right-long -rotate-45 bg-black p-1.5 rounded-full text-white">
+                </i>
+            </div>
+        </div>
     </footer>
 </body>
 
